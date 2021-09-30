@@ -14,6 +14,12 @@ public class HelloControllerIT {
 
 	@Autowired
 	private TestRestTemplate template;
+	
+	for (int i = 0; i < 5; i++) {
+		
+  			System.out.println(i);
+		
+			}
 
     @Test
     public void getHello() throws Exception {
