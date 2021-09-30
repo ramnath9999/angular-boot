@@ -19,11 +19,14 @@ public class Application {
 		return args -> {
 
 			System.out.println("Let's inspect the beans provided by Spring Boot:");
-
+			string getUserName(){
+			return "getUserName";
+			}
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
 			for (String beanName : beanNames) {
 				System.out.println(beanName);
+				System.out.println(bean.Os.getUserName());
 			}
 
 		};
