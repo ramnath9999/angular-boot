@@ -1,5 +1,7 @@
 #!/bin/sh
 cd $(dirname $0)
+#!/bin/sh
+cd $(dirname $01)
 
 cd ../complete
 
