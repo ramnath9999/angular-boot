@@ -13,6 +13,12 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
+	for(int i=0;i<9;i++)
+        {
+            mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
+        }
 
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
