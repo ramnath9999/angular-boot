@@ -21,9 +21,10 @@ public class HelloController {
 		return "Greetings from Spring!"+sub;
 	}
 	
-	@PostMapping("/")
-	public String index() {
-		return "Greetings from Spring!";
+	@PostMapping("/mul")
+	public String index(index) {
+		return "Greetings from Spring!"+mul;
 	}
-
+	
+	
 }
