@@ -13,17 +13,17 @@ public class HelloController {
 	
 	@PostMapping("/add")
 	public String index(index) {
-		return "Greetings from Spring Boot!"+index;
+		return "Greetings from Spring!"+index;
 	}
 	
 	@GetMapping("/sub")
 	public String index(sub) {
-		return "Greetings from Spring Boot!"+sub;
+		return "Greetings from Spring!"+sub;
 	}
 	
 	@PostMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot!";
+		return "Greetings from Spring!";
 	}
 
 }
