@@ -7,6 +7,18 @@ cd ../complete
 
 ./mvnw clean package
 ret=$?
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
