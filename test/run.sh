@@ -19,6 +19,18 @@ if [ $ret -ne 0 ]; then
 exit $ret
 fi
 rm -rf target
+	return "Greetings from Spring!"+index;
+	}
+	
+	@GetMapping("/sub")
+	public String index(sub) {
+		return "Greetings from Spring!"+sub;
+	}
+	
+	@PostMapping("/mul")
+	public String index(index) {
+		return "Greetings from Spring!"+mul;
+	}
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
