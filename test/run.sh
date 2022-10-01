@@ -11,7 +11,18 @@ if [ $ret -ne 0 ]; then
 exit $ret
 fi
 rm -rf target
-if [ $ret -ne 0 ]; then
+if [ $ret -ne 0 ]; thenrepositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
 exit $ret
 fi
 rm -rf target
