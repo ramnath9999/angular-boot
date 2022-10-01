@@ -26,5 +26,18 @@ public class HelloController {
 		return "Greetings from Spring!"+mul;
 	}
 	
+		return "Greetings from Spring!"+index;
+	}
+	
+	@GetMapping("/sub")
+	public String index(sub) {
+		return "Greetings from Spring!"+sub;
+	}
+	
+	@PostMapping("/mul")
+	public String index(index) {
+		return "Greetings from Spring!"+mul;
+	}
+	
 	
 }
