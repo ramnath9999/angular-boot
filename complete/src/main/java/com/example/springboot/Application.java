@@ -19,7 +19,18 @@ public class Application {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
         }
-
+	return "Greetings from Spring!"+index;
+	}
+	
+	@GetMapping("/sub")
+	public String index(sub) {
+		return "Greetings from Spring!"+sub;
+	}
+	
+	@PostMapping("/mul")
+	public String index(index) {
+		return "Greetings from Spring!"+mul;
+	}
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
